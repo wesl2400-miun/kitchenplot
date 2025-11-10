@@ -1,6 +1,6 @@
-/* Gör video-behållaren responsiv */
+/* Gör video-behållaren responsiv, använd ID för att göra stiliseringen på iframe-behållaren möjlig */
 
-.video {
+#video {
   min-width: 320px;
   width: var(--main-width);
   aspect-ratio: 16 / 9;
@@ -13,13 +13,13 @@
 /* Låt video-behållaren anpassa sig efter mindre skärmar */
 
 @media screen and (max-width: 1200px) {
-  .video {
+  #video {
     width: var(--main-w-tablet);
   }
 }
 
 @media screen and (max-width: 700px) {
-  .video {
+  #video {
     width: var(--main-w-mobile);
   }
 }
