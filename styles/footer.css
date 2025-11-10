@@ -2,14 +2,15 @@
 
 .footer {
   width: var(--full-width);
+  height: auto;
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--gray);
-  color: white;
+  border-top: 1px solid var(--dark);
+  background-color: white;
 }
 
 .footer h4 {
