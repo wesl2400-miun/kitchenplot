@@ -1,0 +1,50 @@
+/* Stilisera navigeringsfältet */
+
+.nav {
+  width: inherit;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: var(--dark);
+}
+
+.nav li a {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Aändra länkarnas utseende beroende på om de täcks av muspekaren, är aktiva eller aktuella för den valda undersidan */
+
+.nav li a:link {
+  color: white;
+}
+
+.nav li a:hover {
+  background-color: white;
+  color: var(--dark);
+}
+
+.nav li .selected {
+  background-color: var(--red);
+}
+
+.nav li a:active {
+  color: gray;
+}
+
+/** Gör texten i länkarna mindre på mobiler **/
+
+@media screen and (max-width: 500px) {
+ .nav li a {
+  font-size: 0.9rem;
+  font-weight: 600;
+ }
+}

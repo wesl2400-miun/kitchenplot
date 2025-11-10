@@ -1,0 +1,9 @@
+/* Gör innehållet inuti sidhuvudet responsivt */
+
+.header {
+  width: var(--full-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

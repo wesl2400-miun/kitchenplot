@@ -1,0 +1,25 @@
+/* Gör video-behållaren responsiv */
+
+.video {
+  min-width: 320px;
+  width: var(--main-width);
+  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Låt video-behållaren anpassa sig efter mindre skärmar */
+
+@media screen and (max-width: 1200px) {
+  .video {
+    width: var(--main-w-tablet);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video {
+    width: var(--main-w-mobile);
+  }
+}

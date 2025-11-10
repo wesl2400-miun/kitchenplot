@@ -1,0 +1,27 @@
+/* Stilisera logotypen */
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo img {
+  height: 200px;
+}
+
+/* Gör logotypen mindre på mindre skärmar */
+
+@media screen and (max-width: 800px) {
+  .logo img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo img {
+    height: 140px;
+  }
+}

@@ -1,0 +1,60 @@
+/* Stilisera huvudinnehållet */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20%;
+}
+
+/* Se till att huvudinnehållets delar har samma bredd */
+.main, h1, h2 , p {
+  width: var(--main-width);
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Stilisera rubriker och paragrafer */
+.main h1 {
+  font-size: 1.5rem;
+  border: 2px solid var(--gray); 
+  margin: 0.4rem 0;
+  padding: 0.5rem 0;
+}
+
+.main h2 {
+  font-size: 1.2rem;
+}
+
+.main p {
+  font-size: 1.2rem;
+}
+
+
+/* Anpassa huvudinnehållet till mindre skärmar */
+
+@media screen and (max-width: 1200px) {
+  .main, h1, h2, p {
+    width: var(--main-w-tablet);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main, h1, h2, p {
+    width: var(--main-w-mobile);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main h1 {
+    font-size: 1.3rem;
+  }
+
+  .main h2 {
+    font-size: 1.1rem;
+  }
+
+  .main p {
+    font-size: 1rem;
+  }
+}
